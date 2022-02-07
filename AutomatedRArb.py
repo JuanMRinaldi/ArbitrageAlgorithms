@@ -91,10 +91,10 @@ def signal_handler(signal, frame):
 #inicializo la API de Balanz. (URL, usuario, password, codigo4D, callbackMarketData)
 
 #Datos para produccion
-balanz.init("https://users.balanz.com/asesores", "jmrinaldi", "juan2019", "1729", on_marketdata)
+balanz.init("https://users.balanz.com/asesores", "accountname", "username", "pass", on_marketdata)
 
 #Datos para desarrollo
-#balanz.init("http://desa-01:8085", "rmarchesini", "ramiro2010", "1234", on_marketdata)
+#balanz.init("http://desa-01:8085", "accountname", "username2", "pass", on_marketdata)
 
 ##Descomentar el while (y comentar el for) para que corra sin parar, sino 360 iteraciones son 30mins aprox
 #while True==True:
