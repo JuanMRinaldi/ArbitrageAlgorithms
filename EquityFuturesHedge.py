@@ -66,10 +66,10 @@ with open('RFX20 - Referencia.csv', 'r') as csvfile:
 #inicializo la API de Balanz. (URL, usuario, password, codigo4D, callbackMarketData)
 
 #Datos para produccion
-balanz.init("https://users.balanz.com/asesores", "jmrinaldi", "Juan2018", "1729", on_marketdata)
+balanz.init("https://users.balanz.com/asesores", "accountname", "username", "pass", on_marketdata)
 
 #Datos para desarrollo
-#balanz.init("http://desa-01:8085", "rmarchesini", "ramiro2010", "1234", on_marketdata)
+#balanz.init("http://desa-01:8085", "accountname2", "username2", "pass", on_marketdata)
 while sum(merval.values())>0:
     try:
         #print('paso 1')
